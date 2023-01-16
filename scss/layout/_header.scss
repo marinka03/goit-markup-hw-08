@@ -1,0 +1,87 @@
+/*Header*/
+.header {
+  border-bottom: 1px solid #ececec;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 93px;
+  }
+}
+.wrapper {
+  padding: 24px 0 25px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+}
+.menu__link {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: $color-text-primary;
+  display: block;
+  padding: 32px 0;
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: $hover-text-color;
+  }
+
+  &--current {
+    color: $hover-text-color;
+  }
+
+  &--current::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $hover-text-color;
+    content: "";
+  }
+}
+.list-contact {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 0;
+}
+.list-contact__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  display: block;
+  padding: 32px 0;
+  color: $color-text-secondary;
+  text-decoration: none;
+  gap: 10px;
+
+  @extend %centeredFlex;
+  fill: $color-text-secondary;
+  transition: color 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    fill: $hover-text-color;
+    color: $hover-text-color;
+  }
+}
