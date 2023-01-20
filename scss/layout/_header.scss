@@ -14,6 +14,11 @@
     align-items: center;
     gap: 93px;
   }
+  &__burger {
+    display: flex;
+    border: none;
+    padding: 0;
+  }
 }
 .wrapper {
   padding: 24px 0 25px;
