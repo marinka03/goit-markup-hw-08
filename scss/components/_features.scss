@@ -1,0 +1,39 @@
+/*2 section*/
+.features {
+  padding: 94px 0 94px;
+
+  &__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+.feature-card {
+  &__icon {
+    width: 270px;
+    height: 120px;
+    background: $fourth-section-background;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    @extend %centredFlex;
+  }
+  &__subtitle {
+    width: 270px;
+    height: 16px;
+    margin: 0 0 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  &__text {
+    width: 270px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $color-text-secondary;
+  }
+}
