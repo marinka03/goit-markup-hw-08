@@ -1,5 +1,6 @@
 @import 'base/reset';
 @import 'base/normalize';
+@import 'utils/variables';
 
 @import 'components/common';
 @import 'components/effective';
@@ -8,7 +9,7 @@
  @import 'components/team';
  @import 'components/client';
 
- @import 'utils/variables';
+
  @import 'utils/placeholders';
  @import 'utils/mixins';
  @import 'utils/visually-hidden';
