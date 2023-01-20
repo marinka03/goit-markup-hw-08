@@ -3,7 +3,9 @@
   padding: 0 0 94px;
 }
 .examples-container {
-  @extend %centredFlex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 
   &__title {
@@ -17,7 +19,9 @@
   }
 
   &__list {
-    @extend %centredFlex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 30px;
   }
 
@@ -31,7 +35,7 @@
     left: 0;
     width: 100%;
     height: 70px;
-    background-color: $third-section-overlay;
+    background-color: var(--third-section-overlay);
   }
 
   &__overlay-text {
@@ -41,7 +45,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: $additional-color;
+    color: var(--additional-color);
     padding-top: 27px;
     padding-bottom: 27px;
   }

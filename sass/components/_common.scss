@@ -1,5 +1,21 @@
 .visually-hidden {
-  @import '/sass/utils/visually-hidden';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(50%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
   }
   .container {
     width: 1200px;
@@ -11,8 +27,8 @@
     padding-bottom: 94px;
 }
 .btn {
-    background-color: $button-hover-background;
-    color: $additional-color;
+    background-color: var(--button-hover-background);
+    color: var(--additional-color);
     cursor: pointer;
     font-family: inherit;
     border-radius: 4px;
@@ -29,10 +45,10 @@
   font-size: 26px;
   line-height: 1.1;
   text-decoration: none;
-  color: $hover-text-color;
+  color: var(--hover-text-color);
   letter-spacing: 0.03em;
 
   &__logo-part {
-    color: $logo-color;
+    color: var(--logo-color);
   }
 }

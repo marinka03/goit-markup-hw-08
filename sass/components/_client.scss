@@ -24,9 +24,9 @@
 }
 .icons-list__link {
   padding: 16px 32px;
-  border: 1px solid $contact-links;
+  border: 1px solid var(--contact-links);
   border-radius: 4px;
-  fill: $contact-links;
+  fill: var(--contact-links);
   width: 170px;
   height: 92px;
   display: block;
@@ -35,7 +35,7 @@
 
   &:hover,
   &:focus {
-    border-color: $button-hover-background;
-    fill: $button-hover-background;
+    border-color: var(--button-hover-background);
+    fill: var(--button-hover-background);
   }
 }

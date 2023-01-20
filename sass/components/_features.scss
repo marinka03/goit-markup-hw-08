@@ -13,10 +13,12 @@
   &__icon {
     width: 270px;
     height: 120px;
-    background: $fourth-section-background;
+    background: var(--fourth-section-background);
     border-radius: 4px;
     margin-bottom: 30px;
-    @extend %centredFlex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   &__subtitle {
     width: 270px;
@@ -34,6 +36,6 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: $color-text-secondary;
+    color: var(--color-text-secondary);
   }
 }
