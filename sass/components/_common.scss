@@ -1,5 +1,5 @@
 .visually-hidden {
-  @include visually-hidden;
+  @import '/sass/utils/visually-hidden';
   }
   .container {
     width: 1200px;

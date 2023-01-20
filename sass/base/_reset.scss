@@ -2,9 +2,10 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    color: $color-text-primary;
-    background-color: $header-background-color;
+    color: var(--color-text-primary);
+    background-color: var(--header-background-color);
   }
+  
   *,
   *::before,
   *::after {

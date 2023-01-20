@@ -1,22 +1,16 @@
 @import 'base/reset';
 @import 'base/normalize';
-@import 'utils/variables';
-
 @import 'components/common';
 @import 'components/effective';
  @import 'components/features';
  @import 'components/examples';
  @import 'components/team';
  @import 'components/client';
-
-
  @import 'utils/placeholders';
- @import 'utils/mixins';
  @import 'utils/visually-hidden';
-
+ @import 'utils/variables';
  @import 'layout/header';
  @import 'layout/footer';
  @import 'layout/forms';
  @import 'layout/modal';
-
  @import 'pages/main-portfolio';
