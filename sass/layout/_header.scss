@@ -14,10 +14,19 @@
     align-items: center;
     gap: 93px;
   }
+  
 }
 .header__burger {
   display: none;
+  padding: 0;
+  border: none;
+  background-color: var(--header-background-color);
 }
+@media screen and (min-width: 768px) { 
+  .header-burger {
+    display: inline-block;
+  }
+  }
 .wrapper {
   padding: 24px 0 25px;
 }
