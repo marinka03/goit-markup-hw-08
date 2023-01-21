@@ -1,3 +1,5 @@
+@import '../utils/variables';
+
 /*5 section*/
 .client {
   padding: 94px 0 94px;
@@ -24,9 +26,9 @@
 }
 .icons-list__link {
   padding: 16px 32px;
-  border: 1px solid var(--contact-links);
+  border: 1px solid $contact-links;
   border-radius: 4px;
-  fill: var(--contact-links);
+  fill: $contact-links;
   width: 170px;
   height: 92px;
   display: block;
@@ -35,7 +37,7 @@
 
   &:hover,
   &:focus {
-    border-color: var(--button-hover-background);
-    fill: var(--button-hover-background);
+    border-color: $button-hover-background;
+    fill: $button-hover-background;
   }
 }

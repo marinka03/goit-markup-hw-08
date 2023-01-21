@@ -1,3 +1,5 @@
+@import '../utils/variables';
+
 /*Footer-form*/
 .footer-form {
   display: flex;
@@ -51,7 +53,7 @@
   width: 200px;
   height: 50px;
   padding: 10px 28px;
-  background-color: var(--button-hover-background);
+  background-color: $button-hover-background;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: $additional-color-button;
   fill: $additional-color-button;

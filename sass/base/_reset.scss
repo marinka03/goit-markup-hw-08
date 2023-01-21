@@ -1,9 +1,10 @@
-/*Body*/
+@import '../utils/variables';
 
+/*Body*/
 body {
     font-family: "Roboto", sans-serif;
-    color: var(--color-text-primary);
-    background-color: var(--header-background-color);
+    color: $color-text-primary;
+    background-color: $header-background-color;
   }
   
   *,

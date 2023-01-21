@@ -1,3 +1,5 @@
+@import '../utils/variables';
+
 .visually-hidden {
   font-weight: 700;
   font-size: 36px;
@@ -27,8 +29,8 @@
     padding-bottom: 94px;
 }
 .btn {
-    background-color: var(--button-hover-background);
-    color: var(--additional-color);
+    background-color: $button-hover-background;
+    color: $additional-color;
     cursor: pointer;
     font-family: inherit;
     border-radius: 4px;
@@ -45,10 +47,10 @@
   font-size: 26px;
   line-height: 1.1;
   text-decoration: none;
-  color: var(--hover-text-color);
+  color: $hover-text-color;
   letter-spacing: 0.03em;
 
   &__logo-part {
-    color: var(--logo-color);
+    color: $logo-color;
   }
 }

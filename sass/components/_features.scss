@@ -1,3 +1,5 @@
+@import '../utils/variables';
+
 /*2 section*/
 .features {
   padding: 94px 0 94px;
@@ -13,12 +15,10 @@
   &__icon {
     width: 270px;
     height: 120px;
-    background: var(--fourth-section-background);
+    background: $fourth-section-background;
     border-radius: 4px;
     margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %centeredFlex;
   }
   &__subtitle {
     width: 270px;
@@ -36,6 +36,6 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--color-text-secondary);
+    color: $color-text-secondary;
   }
 }
