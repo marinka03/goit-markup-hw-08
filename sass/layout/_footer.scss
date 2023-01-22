@@ -1,49 +1,80 @@
-@import '../utils/variables';
+@import "../utils/variables";
 
 .footer {
+  width: 100%;
   background-color: $additional-background-color;
   padding: 60px 0 60px;
 
   &__conteiner {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    // justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    // align-items: baseline;
     gap: 93px;
+
+    @media screen and (min-width: 768px) {
+      gap: 165px;
+      align-items: baseline;
+      row-gap: 60px;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      align-items: baseline;
+      gap: 93px;
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }
-.container {
-  &__contact {
-    display: flex;
-    flex-direction: column;
+.container__contact {
+  @extend %centeredFlex;
+  flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
     justify-content: flex-start;
-  }
-  &__logo {
-    margin: 0 0 20px;
+    align-items: stretch;
   }
 }
 .logo {
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 
   &__logo-part-footer {
     color: $additional-color;
   }
 }
-.address__item {
-  margin: 0 0 9px;
-
-  &:last-child {
-    margin: 0;
-  }
+.container__logo {
+  margin-bottom: 20px;
 }
+.address__item :not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .address {
   font-size: 14px;
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  text-align: left;
   color: $additional-color;
   text-decoration: none;
 
   transition: color 250ms var(--timing-function);
+}
+.address__item {
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .address__link {
   font-weight: 400;
@@ -63,11 +94,15 @@
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  // text-align: center;
   text-align: left;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   transition: color 250ms var(--timing-function);
 
+  // @media screen and (min-width:1200px){
+  //   text-align: left;
+  // }
   &:hover,
   &:focus {
     color: $hover-text-color;
@@ -78,10 +113,15 @@
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  // text-align: center;
   text-align: left;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   transition: color 250ms var(--timing-function);
+
+  // @media screen and (min-width:1200px){
+  //   text-align: left;
+  // }
 
   &:hover,
   &:focus {
@@ -95,14 +135,19 @@
   &__text {
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
+    text-align: center;
     color: $additional-color;
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
 
   &__social-list {
+    @extend %centeredFlex;
     gap: 10px;
   }
 }
