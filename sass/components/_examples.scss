@@ -2,7 +2,12 @@
 
 /*3 section*/
 .examples {
-  padding: 0 0 94px;
+display: none;
+  @media screen and (min-width:1200px){
+    background-color: $header-background-color;
+    padding: 0 0 94px;
+    display: block;
+  }
 }
 .examples-container {
   @extend %centeredFlex;
