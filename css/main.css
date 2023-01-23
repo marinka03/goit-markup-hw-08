@@ -1345,7 +1345,11 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 0 15px;
   background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  -webkit-transition: opacity 250ms var(--time-function), visibility 250ms var(--time-function);
+  transition: opacity 250ms var(--time-function), visibility 250ms var(--time-function);
 }
 
 .is-hidden {
@@ -1357,6 +1361,15 @@ img {
 .modal {
   height: 100%;
 }
+.modal__form-field {
+  margin-bottom: 10px;
+}
+.modal__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
 .modal__title {
   font-weight: 700;
   font-size: 20px;
@@ -1366,25 +1379,27 @@ img {
   margin-bottom: 12px;
   color: #212121;
 }
-.modal__form-field {
-  margin-bottom: 10px;
+@media screen and (min-width: 480px) {
+  .modal__title {
+    line-height: 1.5;
+  }
 }
+
 .modal__container {
   position: relative;
   width: 100%;
-  max-width: 528px;
-  height: 100%;
-  max-height: 581px;
+  max-width: 450px;
   padding: 40px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: #ffffff;
 }
-.modal__close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
+@media screen and (min-width: 1200px) {
+  .modal__container {
+    max-width: 528px;
+    max-height: 581px;
+  }
 }
 
 .btn-icon {
@@ -1427,8 +1442,18 @@ img {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+
 .form-field__conditions-chackbox {
   margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+@media screen and (min-width: 480px) {
+  .form-field__conditions-chackbox {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form-field__input {
@@ -1463,6 +1488,11 @@ textarea {
   transition: border-color 250ms var(--timing-function);
   outline: none;
   display: block;
+}
+@media screen and (min-width: 1200px) {
+  .form-field__textarea {
+    width: 448px;
+  }
 }
 .form-field__textarea:focus {
   border-color: #2196f3;

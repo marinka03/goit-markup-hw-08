@@ -1,4 +1,4 @@
-@import '../utils/variables';
+@import "../utils/variables";
 
 /*Modal*/
 .backdrop {
@@ -7,7 +7,12 @@
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 0 15px;
   background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms var(--time-function),
+    visibility 250ms var(--time-function);
+  // overflow: scroll;
 }
 .is-hidden {
   opacity: 0;
@@ -18,38 +23,45 @@
   @extend %centeredFlex;
   height: 100%;
 
-  &__title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 12px;
-
-    color: $color-text-primary;
-  }
   &__form-field {
     margin-bottom: 10px;
   }
 
-  &__container {
-    position: relative;
-    width: 100%;
-    max-width: 528px;
-    height: 100%;
-    max-height: 581px;
-    padding: 40px;
-
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    background-color: $additional-color;
-  }
   &__close {
     position: absolute;
     @extend %centeredFlex;
     top: 8px;
     right: 8px;
+  }
+}
+.modal__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+
+  color: $color-text-primary;
+
+  @media screen and (min-width: 480px) {
+    line-height: 1.5;
+  }
+}
+.modal__container {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  padding: 40px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: $additional-color;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+    max-height: 581px;
   }
 }
 .btn-icon {
@@ -92,9 +104,16 @@
     left: 12px;
     transform: translateY(-50%);
   }
+}
+.form-field__conditions-chackbox {
+  margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
 
-  &__conditions-chackbox {
-    margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 .form-field__input {
@@ -113,11 +132,21 @@
     fill: $hover-text-color;
   }
 }
+// .form-field__control {
+
+//   width: 100%;
+//   max-width: 370px;
+//   max-height: 40px;
+//   @media screen and (min-width:480px) {
+//     max-width: 448px;
+//   }
+// }
 textarea {
   resize: none;
 }
 .form-field__textarea {
   width: 100%;
+  // max-width: 370px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -126,6 +155,10 @@ textarea {
   transition: border-color 250ms var(--timing-function);
   outline: none;
   display: block;
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
 
   &:focus {
     border-color: $button-hover-background;
