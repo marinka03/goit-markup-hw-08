@@ -286,7 +286,12 @@ img {
 /*Cubic-Bezier*/
 /*2 section*/
 .features {
-  padding: 94px 0 94px;
+  padding: 60px 0 60px;
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding: 94px 0 94px;
+  }
 }
 .features__list {
   display: -webkit-box;
@@ -295,36 +300,64 @@ img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: currentColor;
 }
 
-.feature-card__icon {
-  width: 270px;
+.features__item {
+  width: calc((100% - 0px) / 1);
+}
+@media screen and (min-width: 768px) {
+  .features__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    width: calc((100% - 90px) / 4);
+  }
+}
+
+.feature-card__wrap {
+  width: 100%;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
 }
-.feature-card__subtitle {
-  width: 270px;
-  height: 16px;
-  margin: 0 0 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+.feature-card__icon {
+  width: 70px;
+  height: 70px;
 }
 .feature-card__text {
-  width: 270px;
   margin: 0;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.feature-card__subtitle {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .feature-card__subtitle {
+    text-align: left;
+  }
 }
 
 /*Variable declaration*/
@@ -725,7 +758,7 @@ img {
   }
 }
 
-.list-photo, .modal__close, .modal, .footer-form__btn, .user-data, .footer-form, .combined-sections, .footer-contact__social-list, .container__contact, .feature-card__icon, .examples-container, .examples-container__list, .team-container, .social-list, .social-link, .mobile-menu__close {
+.list-photo, .modal__close, .modal, .footer-form__btn, .user-data, .footer-form, .combined-sections, .footer-contact__social-list, .container__contact, .feature-card__wrap, .examples-container, .examples-container__list, .team-container, .social-list, .social-link, .mobile-menu__close {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
