@@ -27,12 +27,13 @@
         <div class="header__container">
           <nav class="header__nav">
             <div class="wrapper">
-              <a class="logo" href="/">Web<span class="logo__logo-part">Studio</span></a>
+              <a class="logo" href="/"
+                >Web<span class="logo__logo-part">Studio</span></a
+              >
             </div>
             <button class="header__burger js-open-menu" type="button">
               <svg width="40" height="40">
-                <use href="./images/icons.svg#icon-burger">
-                </use>
+                <use href="./images/icons.svg#icon-burger"></use>
               </svg>
             </button>
 
@@ -47,17 +48,31 @@
                 <a class="menu__link" href="#Контакти">Контакти</a>
               </li>
             </ul>
-            
           </nav>
           <ul class="list-contact">
             <li>
-              <a class="list-contact__geometry-envelope list-contact__link" href="mailto:info@devstudio.com">
-                <svg class="list-contact__icon list-contact__icon--envelope" width="16" height="12">
-                  <use href="./images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a>
+              <a
+                class="list-contact__geometry-envelope list-contact__link"
+                href="mailto:info@devstudio.com"
+              >
+                <svg
+                  class="list-contact__icon list-contact__icon--envelope"
+                  width="16"
+                  height="12"
+                >
+                  <use href="./images/icons.svg#icon-envelope"></use></svg
+                >info@devstudio.com</a
+              >
             </li>
             <li>
-              <a class="list-contact__geometry-smartphone list-contact__link" href="tel:+380961111111"
-                ><svg class="list-contact__icon list-contact__icon--smartphone" width="12" height="16">
+              <a
+                class="list-contact__geometry-smartphone list-contact__link"
+                href="tel:+380961111111"
+                ><svg
+                  class="list-contact__icon list-contact__icon--smartphone"
+                  width="12"
+                  height="16"
+                >
                   <use href="./images/icons.svg#icon-smartphone"></use></svg
                 >+38 096 111 11 11</a
               >
@@ -67,7 +82,7 @@
       </div>
     </header>
 
-     <main class="main">
+    <main class="main">
       <section class="portfolio-section">
         <div class="container">
           <h1 class="container__title visually-hidden">Портфоліо</h1>
@@ -119,15 +134,41 @@
             </li>
           </ul>
           <ul class="list-photo container__list-photo">
-             <li class="card list-photo__card">
+            <li class="card list-photo__card">
               <a href="#" class="card__link">
                 <div class="card__unreal-link">
-                  <img
-                    src="./images/website.jpg"
-                    alt="Веб-сайт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      type="image/jpeg"
+                      srcset="
+                        ./images/website.jpg    1x,
+                        ./images/website@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      type="image/jpeg"
+                      srcset="
+                        ./images/website-tablet.jpg    1x,
+                        ./images/website-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      type="image/jpeg"
+                      srcset="
+                        ./images/website-mobile.jpg    1x,
+                        ./images/website-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/website.jpg"
+                      alt="Веб-сайт"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <div class="description-overlay">
                     <p class="description-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -147,12 +188,38 @@
             <li class="card list-photo__card">
               <a href="#" class="card__link">
                 <div class="card__unreal-link">
-                  <img
-                    src="./images/basketball_poster.jpg"
-                    alt="Постер на якому двоє хлопців грають в баскетбол"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      type="image/jpeg"
+                      srcset="
+                        ./images/basketball_poster.jpg    1x,
+                        ./images/basketball_poster@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      type="image/jpeg"
+                      srcset="
+                        ./images/basketball_poster-tablet.jpg    1x,
+                        ./images/basketball_poster-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      type="image/jpeg"
+                      srcset="
+                        ./images/basketball_poster-mobile.jpg    1x,
+                        ./images/basketball_poster-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/basketball_poster.jpg"
+                      alt="Постер на якому двоє хлопців грають в баскетбол"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <div class="description-overlay">
                     <p class="description-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -174,12 +241,37 @@
             <li class="card list-photo__card">
               <a href="#" class="card__link">
                 <div class="card__unreal-link">
-                  <img
-                    src="./images/seafood.jpg"
-                    alt="Малюнок риби та написано: Ресторан Seafood"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      type="image/jpeg"
+                      srcset="
+                        ./images/seafood.jpg    1x,
+                        ./images/seafood@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      type="image/jpeg"
+                      srcset="
+                        ./images/seafood-tablet.jpg    1x,
+                        ./images/seafood-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      type="image/jpeg"
+                      srcset="
+                        ./images/seafood-mobile.jpg    1x,
+                        ./images/seafood-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/seafood.jpg"
+                      alt="Малюнок риби та написано: Ресторан Seafood"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <div class="description-overlay">
                     <p class="description-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -194,17 +286,42 @@
                   <p class="card__text">Додаток</p>
                 </div>
               </a>
-            </li> 
+            </li>
 
             <li class="card list-photo__card">
               <a href="#" class="card__link">
                 <div class="card__unreal-link">
-                  <img
-                    src="./images/headphone.jpg"
-                    alt="Навушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      type="image/jpeg"
+                      srcset="
+                        ./images/headphone.jpg    1x,
+                        ./images/headphone@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      type="image/jpeg"
+                      srcset="
+                        ./images/headphone-tablet.jpg    1x,
+                        ./images/headphone-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      type="image/jpeg"
+                      srcset="
+                        ./images/headphone-mobile.jpg    1x,
+                        ./images/headphone-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/headphone.jpg"
+                      alt="Навушники"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <div class="description-overlay">
                     <p class="description-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -224,12 +341,34 @@
             <li class="card list-photo__card">
               <a href="#" class="card__link">
                 <div class="card__unreal-link">
-                  <img
-                    src="./images/boxes.jpg"
-                    alt="Дві коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      type="image/jpeg"
+                      srcset="./images/boxes.jpg 1x, ./images/boxes@2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      type="image/jpeg"
+                      srcset="
+                        ./images/boxes-tablet.jpg    1x,
+                        ./images/boxes-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      type="image/jpeg"
+                      srcset="
+                        ./images/boxes-mobile.jpg    1x,
+                        ./images/boxes-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/boxes.jpg"
+                      alt="Дві коробки"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <div class="description-overlay">
                     <p class="description-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -249,12 +388,37 @@
             <li class="card list-photo__card">
               <a href="#" class="card__link">
                 <div class="card__unreal-link">
-                  <img
-                    src="./images/website_dark_background.jpg"
-                    alt="Веб-сайт з темним фоном"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      type="image/jpeg"
+                      srcset="
+                        ./images/website_dark_background.jpg    1x,
+                        ./images/website_dark_background@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      type="image/jpeg"
+                      srcset="
+                        ./images/website_dark_background-tablet.jpg    1x,
+                        ./images/website_dark_background-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      type="image/jpeg"
+                      srcset="
+                        ./images/website_dark_background-mobile.jpg    1x,
+                        ./images/website_dark_background-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/website_dark_background.jpg"
+                      alt="Веб-сайт з темним фоном"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <div class="description-overlay">
                     <p class="description-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -274,12 +438,37 @@
             <li class="card list-photo__card">
               <a href="#" class="card__link">
                 <div class="card__unreal-link">
-                  <img
-                    src="./images/magazine.jpg"
-                    alt="Журнал"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      type="image/jpeg"
+                      srcset="
+                        ./images/magazine.jpg    1x,
+                        ./images/magazine@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      type="image/jpeg"
+                      srcset="
+                        ./images/magazine-tablet.jpg    1x,
+                        ./images/magazine-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      type="image/jpeg"
+                      srcset="
+                        ./images/magazine-mobile.jpg    1x,
+                        ./images/magazine-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/magazine.jpg"
+                      alt="Журнал"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <div class="description-overlay">
                     <p class="description-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -299,12 +488,34 @@
             <li class="card list-photo__card">
               <a href="#" class="card__link">
                 <div class="card__unreal-link">
-                  <img
-                    src="./images/label.jpg"
-                    alt="Ярлик"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      type="image/jpeg"
+                      srcset="./images/label.jpg 1x, ./images/label@2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      type="image/jpeg"
+                      srcset="
+                        ./images/label-tablet.jpg    1x,
+                        ./images/label-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      type="image/jpeg"
+                      srcset="
+                        ./images/label-mobile.jpg    1x,
+                        ./images/label-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/label.jpg"
+                      alt="Ярлик"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <div class="description-overlay">
                     <p class="description-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -324,12 +535,34 @@
             <li class="card list-photo__card">
               <a href="#" class="card__link">
                 <div class="card__unreal-link">
-                  <img
-                    src="./images/laptop.jpg"
-                    alt="Ноутбук"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      type="image/jpeg"
+                      srcset="./images/laptop.jpg 1x, ./images/laptop@2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      type="image/jpeg"
+                      srcset="
+                        ./images/laptop-tablet.jpg    1x,
+                        ./images/laptop-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      type="image/jpeg"
+                      srcset="
+                        ./images/laptop-mobile.jpg    1x,
+                        ./images/laptop-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/laptop.jpg"
+                      alt="Ноутбук"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <div class="description-overlay">
                     <p class="description-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -367,9 +600,7 @@
                 >
               </li>
               <li class="address__item">
-                <a
-                  class="address__link-mail"
-                  href="mailto:info@devstudio.com"
+                <a class="address__link-mail" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
@@ -382,88 +613,105 @@
           </address>
         </div>
 
-          <div class="footer-contact">
-            <p class="footer-contact__text">Приєднуйтесь</p>
-            <ul class="social-list footer-contact__social-list">
-              <li class="social-list__footer-item">
-                <a href="#" class="social-link footer-contact__social-link"
-                  ><svg width="20" height="20">
-                    <use href="./images/icons.svg#icon-instagram"></use></svg
-                ></a>
-              </li>
-  
-              <li class="social-list__footer-item">
-                <a href="#" class="social-link footer-contact__social-link"
-                  ><svg width="20" height="20">
-                    <use href="./images/icons.svg#icon-twitter"></use></svg
-                ></a>
-              </li>
-  
-              <li class="social-list__footer-item">
-                <a href="#" class="social-link footer-contact__social-link">
-                  <svg width="20" height="20">
-                    <use href="./images/icons.svg#icon-facebook"></use></svg
-                ></a>
-              </li>
-  
-              <li class="social-list__footer-item">
-                <a href="#" class="social-link footer-contact__social-link">
-                  <svg width="20" height="20">
-                    <use href="./images/icons.svg#icon-linkedin"></use></svg
-                ></a>
-              </li>
-            </ul>
-          </div>
+        <div class="footer-contact">
+          <p class="footer-contact__text">Приєднуйтесь</p>
+          <ul class="social-list footer-contact__social-list">
+            <li class="social-list__footer-item">
+              <a href="#" class="social-link footer-contact__social-link"
+                ><svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
 
-          <form class=" footer-form" name="footer-form" autocomplete="on" novalidate>
-              <div class="user-data">
-                <lebel class="user-data__label" for="user-contact">Підпишіться на розсилку</lebel>
-                <input 
-                class="user-data__input" 
-                id="user-contact"
-                type="email" 
-                name="user-contact"
-                placeholder="E-mail"
-                >
-              </div>
-              <button class="btn footer-form__btn" type="submit">
-              <p class="footer-form__text">Підписатися</p>
-              <svg width="24" height="24">
-                <use href="./images/icons.svg#icon-telegram"></use>
-              </svg>
-              </button>
-            </form>
+            <li class="social-list__footer-item">
+              <a href="#" class="social-link footer-contact__social-link"
+                ><svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+
+            <li class="social-list__footer-item">
+              <a href="#" class="social-link footer-contact__social-link">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+
+            <li class="social-list__footer-item">
+              <a href="#" class="social-link footer-contact__social-link">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <form
+          class="footer-form"
+          name="footer-form"
+          autocomplete="on"
+          novalidate
+        >
+          <div class="user-data">
+            <lebel class="user-data__label" for="user-contact"
+              >Підпишіться на розсилку</lebel
+            >
+            <input
+              class="user-data__input"
+              id="user-contact"
+              type="email"
+              name="user-contact"
+              placeholder="E-mail"
+            />
+          </div>
+          <button class="btn footer-form__btn" type="submit">
+            <p class="footer-form__text">Підписатися</p>
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-telegram"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <div class="mobile-menu js-menu-container">
       <div class="container mobile-container">
-      <div class="mobile-container--top">
-        <button class="mobile-menu__close js-close-menu" type="button">
-          <svg class="close-icon"  width="40"
-          height="40">
-            <use href="./images/icons.svg#icon-close-black"></use>
-          </svg>
-        </button>
-        <ul class="mobile-nav">
-          <li class="mobile-nav__item">
-            <a class="mobile-nav__link" href="./index.html">Студія</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a class="mobile-nav__link mobile-nav__link--current" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a class="mobile-nav__link" href="#Контакти">Контакти</a>
-          </li>
-        </ul>
-      </div>
+        <div class="mobile-container--top">
+          <button class="mobile-menu__close js-close-menu" type="button">
+            <svg class="close-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <ul class="mobile-nav">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="./index.html">Студія</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a
+                class="mobile-nav__link mobile-nav__link--current"
+                href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="#Контакти">Контакти</a>
+            </li>
+          </ul>
+        </div>
         <div class="mobile-container--bottom">
           <ul class="mobile-menu-contact">
             <li class=".mobile-menu-contact__item">
-              <a class="mobile-menu-contact__link mobile-menu-contact__link--blue" href="tel:+380961111111"
-                >+38 096 111 11 11</a>
+              <a
+                class="mobile-menu-contact__link mobile-menu-contact__link--blue"
+                href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
             </li>
             <li class=".mobile-menu-contact__item">
-              <a class="mobile-menu-contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a
+                class="mobile-menu-contact__link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
             </li>
           </ul>
           <ul class="mobile-menu-socials">
