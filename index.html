@@ -77,7 +77,7 @@
         </div>
       </section> -->
 
-      <section class="features">
+      <!-- <section class="features">
         <div class="container">
           <h2 class="visually-hidden">Наші особливості</h2>
           <ul class="features__list">
@@ -139,7 +139,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- <section class="examples">
         <div class="container examples-container">
@@ -182,16 +182,40 @@
         </div>
       </section> -->
 
-      <!-- <section class="team">
+      <section class="team">
         <div class="container team-container">
             <h2 class="team-container__title">Наша команда</h2>
             <ul class="team-container__list">
               <li class="person-card">
-                <img
+                <picture>
+                  <source
+                    type="image/jpeg"
+                    srcset="
+                      ./images/guy_in_a_red_shirt.jpg    1x,
+                      ./images/guy_in_a_red_shirt@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    type="image/jpeg"
+                    srcset="
+                      ./images/guy_in_a_red_shirt-tablet.jpg    1x,
+                      ./images/guy_in_a_red_shirt-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    type="image/jpeg"
+                    srcset="
+                      ./images/guy_in_a_red_shirt-mobile.jpg    1x,
+                      ./images/guy_in_a_red_shirt-mobile@2x.jpg 2x
+                    "
+                  />
+                  <img
                   src="./images/guy_in_a_red_shirt.jpg"
                   alt="Ігор Дем'яненко"
-                  width="270"
                 />
+                </picture>
                 <div class="details">
                   <h3 class="details__subtitle">Ігор Дем'яненко</h3>
                   <p class="details__text" lang="en">Product Designer</p>
@@ -235,11 +259,35 @@
                 </div>
               </li>
               <li class="person-card">
-                <img
+                <picture>
+                  <source
+                    type="image/jpeg"
+                    srcset="
+                      ./images/girl_with_blond_hair_hair.jpg    1x,
+                      ./images/girl_with_blond_hair_hair@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    type="image/jpeg"
+                    srcset="
+                      ./images/girl_with_blond_hair-tablet.jpg    1x,
+                      ./images/girl_with_blond_hair-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    type="image/jpeg"
+                    srcset="
+                      ./images/girl_with_blond_hair-mobile.jpg    1x,
+                      ./images/girl_with_blond_hair-mobile@2x.jpg 2x
+                    "
+                  />
+                  <img
                   src="./images/girl_with_blond_hair.jpg"
                   alt="Ольга Рєпіна"
-                  width="270"
                 />
+                </picture>
                 <div class="details">
                   <h3 class="details__subtitle">Ольга Рєпіна</h3>
                   <p class="details__text" lang="en">Frontend Developer</p>
@@ -283,11 +331,36 @@
                 </div>
               </li>
               <li class="person-card">
-                <img
+                <picture>
+                  <source
+                    type="image/jpeg"
+                    srcset="
+                      ./images/guy_in_a_white_shirt.jpg    1x,
+                      ./images/guy_in_a_white_shirt@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    type="image/jpeg"
+                    srcset="
+                      ./images/guy_in_a_white_shirt-tablet.jpg    1x,
+                      ./images/guy_in_a_white_shirt-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    type="image/jpeg"
+                    srcset="
+                      ./images/guy_in_a_white_shirt-mobile.jpg    1x,
+                      ./images/guy_in_a_white_shirt-mobile@2x.jpg 2x
+                    "
+                  />
+                  <img
                   src="./images/guy_in_a_white_shirt.jpg"
                   alt="Микола Тарасов"
-                  width="270"
                 />
+                </picture>
+                
                 <div class="details">
                   <h3 class="details__subtitle">Микола Тарасов</h3>
                   <p class="details__text" lang="en">Marketing</p>
@@ -331,11 +404,36 @@
                 </div>
               </li>
               <li class="person-card">
-                <img
+                <picture>
+                  <source
+                    type="image/jpeg"
+                    srcset="
+                      ./images/guy_in_a_black_t-shirt.jpg    1x,
+                      ./images/guy_in_a_black_t-shirt@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    type="image/jpeg"
+                    srcset="
+                      ./images/guy_in_a_black_t-shirt-tablet.jpg    1x,
+                      ./images/guy_in_a_black_t-shirt-tablet@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    type="image/jpeg"
+                    srcset="
+                      ./images/guy_in_a_black_t-shirt-mobile.jpg    1x,
+                      ./images/guy_in_a_black_t-shirt-mobile@2x.jpg 2x
+                    "
+                  />
+                  <img
                   src="./images/guy_in_a_black_t-shirt.jpg"
                   alt="Михайло Єрмаков"
-                  width="270"
                 />
+                </picture>
+               
                 <div class="details">
                   <h3 class="details__subtitle">Михайло Єрмаков</h3>
                   <p class="details__text" lang="en">UI Designer</p>
@@ -381,7 +479,7 @@
             </ul>
         </div>
       </section>
-      <section class="client">
+      <!-- <section class="client">
         <div class="container">
           <h2 class="client__title">Постійні клієнти</h2>
           <div class="container-icons">
@@ -426,8 +524,8 @@
             </ul>
           </div>
         </div>
-      </section>
-    </main> -->
+      </section> -->
+    </main>
 
     <!-- <footer class="footer">
       <div class="container footer__conteiner">

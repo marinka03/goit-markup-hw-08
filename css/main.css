@@ -435,34 +435,43 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.team-container__list {
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .team-container__title {
-  margin: 0 0 50px;
+  margin: 50px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.178;
   letter-spacing: 0.03em;
   text-align: center;
 }
-.team-container__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 30px;
+@media screen and (min-width: 1200px) {
+  .team-container__title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .person-card {
-  width: 270px;
-  height: 430px;
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  width: calc((100% - 0px) / 1);
+}
+@media screen and (min-width: 768px) {
+  .person-card {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .person-card {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .details {
@@ -758,7 +767,7 @@ img {
   }
 }
 
-.list-photo, .modal__close, .modal, .footer-form__btn, .user-data, .footer-form, .combined-sections, .footer-contact__social-list, .container__contact, .feature-card__wrap, .examples-container, .examples-container__list, .team-container, .social-list, .social-link, .mobile-menu__close {
+.list-photo, .modal__close, .modal, .footer-form__btn, .user-data, .footer-form, .combined-sections, .footer-contact__social-list, .container__contact, .feature-card__wrap, .examples-container, .examples-container__list, .team-container, .team-container__list, .social-list, .social-link, .mobile-menu__close {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
