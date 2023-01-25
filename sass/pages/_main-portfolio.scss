@@ -54,7 +54,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  flex-wrap: wrap;
+  width: 100%;
 }
 .container__list-photo {
   gap: 30px;
@@ -76,13 +76,6 @@
   &:hover .description-overlay {
     transform: translateY(0);
   }
-
-  &__details-portfolio {
-    padding: 20px 24px;
-    border-right: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-    border-left: 1px solid #eee;
-  }
   &__subtitle {
     margin: 0 0 4px;
     font-weight: 700;
@@ -101,8 +94,17 @@
     color: $color-text-secondary;
   }
 }
+.card__details-portfolio {
+  padding: 20px 24px;
+  flex-grow:1;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
 .card__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   text-decoration: none;
   transition: box-shadow 250ms var(--timing-function);
 
