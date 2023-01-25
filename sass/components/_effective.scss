@@ -16,7 +16,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("/images/background-image-mobile\.jpg");
+    url("../images/background-image-mobile\.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -30,7 +30,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("/images/background-image-desktop.jpg");
+      url("../images/background-image-desktop.jpg");
   }
 
   @media screen and (min-width: 481px) {
@@ -38,7 +38,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("/images/background-image-tablet.jpg");
+      url("../images/background-image-tablet.jpg");
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -46,7 +46,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("/images/background-image-tablet@2x.jpg");
+        url("../images/background-image-tablet@2x.jpg");
     }
   }
 
@@ -55,7 +55,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("/images/background-image-desktop.jpg");
+      url("../images/background-image-desktop.jpg");
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -64,7 +64,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("/images/background-image-desktop@2x.jpg");
+        url("../images/background-image-desktop@2x.jpg");
     }
   }
 }
